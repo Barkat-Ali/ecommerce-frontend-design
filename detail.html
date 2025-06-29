@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Detail</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    function sendInquiry() {
+      alert("✅ Your inquiry has been sent to the supplier.");
+    }
+
+    function viewSellerProfile() {
+      alert("ℹ️ Redirecting to seller profile...");
+      // Uncomment below to redirect
+      // window.location.href = "seller-profile.html";
+    }
+
+    function saveForLater() {
+      alert("💾 Product has been saved for later.");
+    }
+  </script>
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      <div class="logo-section">
+        <span class="brand-name">Brand</span>
+      </div>
+
+      <div class="search-section">
+        <input type="text" placeholder="Search" class="search-input" />
+        <select class="category-select" onchange="if(this.value) window.location.href=this.value;">
+          <option value="">All category</option>
+          <option value="product.html">Products</option>
+        </select>
+        <button class="search-btn">Search</button>
+      </div>
+
+      <div class="menu-icons">
+        <div class="menu-item"><i class="fas fa-user"></i><span>Profile</span></div>
+        <div class="menu-item"><i class="fas fa-comment-alt"></i><span>Message</span></div>
+        <div class="menu-item"><i class="fas fa-heart"></i><span>Orders</span></div>
+        <div class="menu-item">
+          <i class="fas fa-shopping-cart"></i>
+          <a href="cart.html" style="text-decoration: none; color: inherit; cursor: pointer;">My cart</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-links">
+      <a href="product.html">All category</a>
+      <a href="#">Hot offers</a>
+      <a href="#">GIH boxes</a>
+      <a href="#">Projects</a>
+      <a href="#">Menu item</a>
+      <a href="#">Help</a>
+    </div>
+    <div class="language-currency">English, USD</div>
+    <div style="display: flex;">Ship to <img style="height: 20px;" src="assets/Layout1/Image/flags/US@2x.png" alt=""></div>
+  </nav>
+
+  <div class="max-w-7xl mx-auto p-6">
+    <!-- Breadcrumb -->
+    <nav class="text-sm text-gray-600 mb-4">
+      Home > Clothings > Men's wear > Summer clothing
+    </nav>
+
+    <!-- Product Info -->
+    <div class="flex flex-col lg:flex-row gap-6">
+      <!-- Product + Gallery -->
+      <div class="flex-1 bg-white p-6 rounded shadow">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="flex-shrink-0">
+            <img src="Image/cloth/2.jpg" alt="Product" class="w-64 h-64 object-cover rounded">
+            <div class="flex gap-2 mt-2">
+              <img src="Image/cloth/2.jpg" class="w-12 h-12 rounded border" />
+              <img src="Image/cloth/2.jpg" class="w-12 h-12 rounded border" />
+              <img src="Image/cloth/2.jpg" class="w-12 h-12 rounded border" />
+            </div>
+          </div>
+          <div class="flex-1">
+            <p class="text-green-600 font-semibold">✔ In stock</p>
+            <h2 class="text-xl font-bold mb-2">Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h2>
+            <div class="text-sm text-gray-500 mb-1">⭐⭐⭐⭐☆ 32 reviews - 154 sold</div>
+            <div class="text-xl text-red-600 font-bold mb-2">
+              $98.00 <span class="text-gray-500 line-through text-sm">$120.00</span>
+              <span class="text-green-600 text-sm ml-2">Free Shipping</span>
+            </div>
+
+            <table class="text-sm text-gray-700 mb-4">
+              <tr><td class="py-1 pr-4 font-medium">Type:</td><td>Classic shoes</td></tr>
+              <tr><td class="py-1 pr-4 font-medium">Material:</td><td>Plastic material</td></tr>
+              <tr><td class="py-1 pr-4 font-medium">Design:</td><td>Modern nice</td></tr>
+              <tr><td class="py-1 pr-4 font-medium">Customization:</td><td>Customized logo and packaging</td></tr>
+              <tr><td class="py-1 pr-4 font-medium">Warranty:</td><td>2 years full warranty</td></tr>
+            </table>
+
+            <div class="flex gap-4">
+              <button onclick="sendInquiry()" class="bg-blue-600 text-white px-4 py-2 rounded">Send Inquiry</button>
+              <button onclick="viewSellerProfile()" class="border border-gray-300 px-4 py-2 rounded text-sm">Seller's profile</button>
+            </div>
+            <button onclick="saveForLater()" class="text-blue-600 text-sm mt-2">Save for later</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Supplier Card -->
+      <div style="padding-top: 10px;">
+        <aside class="w-full lg:w-80 bg-white p-4 rounded shadow">
+          <h3 class="font-semibold text-lg mb-2">Supplier</h3>
+          <p class="text-sm font-medium">Guangxi Trading LLC</p>
+          <p class="text-sm text-gray-500 flex gap-1 items-center">
+            <img src="assets/Layout1/Image/flags/US@2x.png" alt="US" class="w-4 h-4" />
+            US, Washington
+          </p>
+          <p class="text-sm text-gray-500">✔ Verified Seller</p>
+          <button onclick="sendInquiry()" class="mt-3 w-full bg-blue-600 text-white py-2 rounded">Send inquiry</button>
+          <button onclick="viewSellerProfile()" class="w-full border mt-2 py-2 rounded text-sm">Seller’s profile</button>
+        </aside>
+      </div>
+    </div>
+
+    <!-- Tabs + Suggestions -->
+    <div class="flex flex-col md:flex-row mt-6 gap-6">
+      <div class="bg-white p-6 rounded shadow flex-1">
+        <ul class="flex gap-6 border-b text-sm text-gray-600 mb-4">
+          <li class="border-b-2 border-blue-600 text-blue-600 pb-1">Description</li>
+          <li>Reviews</li>
+          <li>Shipping</li>
+          <li>About seller</li>
+        </ul>
+        <p class="text-sm text-gray-700">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore...
+        </p>
+        <table class="text-sm text-gray-700 mt-4">
+          <tr><td class="font-medium pr-4 py-1">Model</td><td>#8768867</td></tr>
+          <tr><td class="font-medium pr-4 py-1">Style</td><td>Classic style</td></tr>
+          <tr><td class="font-medium pr-4 py-1">Certificate</td><td>ISO-88892112</td></tr>
+          <tr><td class="font-medium pr-4 py-1">Size</td><td>36mm x 450mm x 19mm</td></tr>
+          <tr><td class="font-medium pr-4 py-1">Memory</td><td>8GB RAM</td></tr>
+        </table>
+        <ul class="list-disc list-inside text-sm text-gray-600 mt-3">
+          <li>Some great feature name here</li>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Duis aute irure dolor in reprehenderit</li>
+        </ul>
+      </div>
+
+      <div class="w-full md:w-64 bg-white p-4 rounded shadow">
+        <h3 class="font-semibold text-md mb-3">You may like</h3>
+        <div class="space-y-4 text-sm text-gray-700">
+          <div class="flex gap-2"><img src="Image/cloth/1.jpg" class="w-12 h-12 rounded" /><div>Men Blazers Set<br><span class="text-xs text-gray-500">$700 - $990.50</span></div></div>
+          <div class="flex gap-2"><img src="assets/Image/tech/6.png" class="w-12 h-12 rounded" /><div>Main Shirt Sleeve<br><span class="text-xs text-gray-500">$700 - $990.50</span></div></div>
+          <div class="flex gap-2"><img src="assets/Image/tech/image 34.png" class="w-12 h-12 rounded" /><div>Basketball Crew Socks<br><span class="text-xs text-gray-500">$700 - $990.50</span></div></div>
+          <div class="flex gap-2"><img src="assets/Image/tech/image 32.png" class="w-12 h-12 rounded" /><div>New Summer T-Shirts<br><span class="text-xs text-gray-500">$700 - $990.50</span></div></div>
+          <div class="flex gap-2"><img src="assets/Image/tech/6.png" class="w-12 h-12 rounded" /><div>Apple Watch Series<br><span class="text-xs text-gray-500">$700 - $990.50</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Products -->
+    <div class="bg-white mt-6 p-6 rounded shadow">
+      <h3 class="text-lg font-semibold mb-4">Related products</h3>
+      <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
+        <img src="assets/Image/tech/6.png" class="w-full h-24 object-cover rounded">
+        <img src="assets/Image/tech/image 34.png" class="w-full h-24 object-cover rounded">
+        <img src="assets/Image/tech/image 32.png" class="w-full h-24 object-cover rounded">
+        <img src="assets/Image/tech/6.png" class="w-full h-24 object-cover rounded">
+        <img src="assets/Image/tech/image 34.png" class="w-full h-24 object-cover rounded">
+        <img src="assets/Image/tech/image 32.png" class="w-full h-24 object-cover rounded">
+      </div>
+    </div>
+
+    <!-- Promo Banner -->
+    <div class="bg-blue-600 text-white mt-6 p-6 rounded text-center">
+      <p class="text-lg font-bold">Super discount on more than 100 USD</p>
+      <p class="text-sm">Have you ever finally just write dummy info</p>
+      <button class="mt-3 bg-white text-blue-600 px-6 py-2 rounded">Shop now</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="new-footer mt-10">
+    <!-- footer content remains unchanged -->
+  </footer>
+</body>
+</html>

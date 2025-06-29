@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Accessories - Listing</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+     <!-- Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      <!-- Logo -->
+      <div class="logo-section">
+
+        <span class="brand-name">Brand</span>
+      </div>
+
+      <!-- Search + Category -->
+      <div class="search-section">
+        <input type="text" placeholder="Search" class="search-input" />
+        <select class="category-select">
+          <option>All category</option>
+          <!-- Add more categories as needed -->
+        </select>
+        <button class="search-btn">Search</button>
+      </div>
+
+      <!-- Navigation Icons -->
+      <div class="menu-icons">
+        <div class="menu-item">
+          <i class="fas fa-user"></i>
+          <span>Profile</span>
+        </div>
+        <div class="menu-item">
+          <i class="fas fa-comment-alt"></i>
+          <span>Message</span>
+        </div>
+        <div class="menu-item">
+          <i class="fas fa-heart"></i>
+          <span>Orders</span>
+        </div>
+        <div class="menu-item">
+          <i class="fas fa-shopping-cart"></i>
+         <a href="cart.html" style="text-decoration: none; color: inherit; cursor: pointer;">My cart</a>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Main Section-->
+  <nav class="navbar">
+    <div class="nav-links">
+      <a href="product.html">All category</a>
+      <a href="#">Hot offers</a>
+      <a href="#">GIH boxes</a>
+      <a href="#">Projects</a>
+      <a href="#">Menu item</a>
+      <a href="#">Help</a>
+    </div>
+    <div class="language-currency">English, USD</div>
+   <div style="display: flex;">Ship to <img style="height: 20px;" src="assets/Layout1/Image/flags/US@2x.png" alt=""></div>
+  </nav>
+
+  <div class="max-w-7xl mx-auto p-6">
+    <!-- Breadcrumb -->
+    <nav class="text-sm text-gray-600 mb-4">
+      Home > Clothings > Men's wear > Summer clothing
+    </nav>
+
+    <div class="flex gap-6">
+      <!-- Sidebar Filters -->
+      <aside class="w-64 bg-white p-4 rounded shadow">
+        <h3 class="font-bold mb-2">Category</h3>
+        <ul class="text-sm text-gray-700 space-y-1">
+          <li>Mobile accessory</li>
+          <li>Electronics</li>
+          <li>Smartphones</li>
+          <li>Modern tech</li>
+          <li class="text-blue-600">See all</li>
+        </ul>
+
+        <h3 class="font-bold mt-6 mb-2">Brands</h3>
+        <ul class="text-sm text-gray-700 space-y-1">
+          <li><input type="checkbox" /> Samsung</li>
+          <li><input type="checkbox" /> Apple</li>
+          <li><input type="checkbox" /> Huawei</li>
+          <li><input type="checkbox" /> Poco</li>
+          <li><input type="checkbox" /> Lenovo</li>
+        </ul>
+
+        <h3 class="font-bold mt-6 mb-2">Features</h3>
+        <ul class="text-sm text-gray-700 space-y-1">
+          <li><input type="checkbox" /> Metallic</li>
+          <li><input type="checkbox" /> Plastic cover</li>
+          <li><input type="checkbox" /> 8GB Ram</li>
+          <li><input type="checkbox" /> Super power</li>
+          <li><input type="checkbox" /> Large Memory</li>
+        </ul>
+
+        <h3 class="font-bold mt-6 mb-2">Price range</h3>
+        <div class="flex items-center space-x-2">
+          <input type="text" placeholder="Min" class="border px-2 py-1 w-16" />
+          <input type="text" placeholder="Max" class="border px-2 py-1 w-16" />
+          <button class="bg-blue-500 text-white px-3 py-1 text-sm rounded">Apply</button>
+        </div>
+
+        <h3 class="font-bold mt-6 mb-2">Condition</h3>
+        <ul class="text-sm text-gray-700 space-y-1">
+          <li><input type="radio" name="condition" checked /> Any</li>
+          <li><input type="radio" name="condition" /> Refurbished</li>
+          <li><input type="radio" name="condition" /> Brand new</li>
+          <li><input type="radio" name="condition" /> Old items</li>
+        </ul>
+
+        <h3 class="font-bold mt-6 mb-2">Ratings</h3>
+        <ul class="text-sm text-gray-700 space-y-1">
+          <li>⭐⭐⭐⭐⭐</li>
+          <li>⭐⭐⭐⭐</li>
+          <li>⭐⭐⭐</li>
+          <li>⭐⭐</li>
+          <li>⭐</li>
+        </ul>
+      </aside>
+
+      <!-- Product List -->
+      <section class="flex-1">
+        <div class="flex justify-between items-center mb-4">
+          <p class="text-gray-700 text-sm">12,911 items in <strong>Mobile accessory</strong></p>
+          <div class="flex gap-4 text-sm">
+            <label><input type="checkbox" /> Verified only</label>
+            <select class="border px-2 py-1 text-sm rounded">
+              <option>Featured</option>
+              <option>Newest</option>
+              <option>Price: Low to High</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Product Card -->
+        <div class="space-y-4">
+          <div class="bg-white rounded shadow p-4 flex items-center justify-between">
+            <div class="flex gap-4">
+              <img src="assets/Image/tech/6.png" class="w-28 h-28 object-cover rounded" />
+              <div>
+                <h3 class="font-semibold text-lg">Canon Camera EOS 2000, Black 10x zoom</h3>
+                <p class="text-red-500 font-bold text-lg">$998.00 <span class="line-through text-gray-400 text-sm">$1128.00</span></p>
+                <p class="text-yellow-500">⭐⭐⭐⭐☆ 14 orders - <span class="text-green-600">Free Shipping</span></p>
+                <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <a href="detail.html" class="text-blue-600 text-sm">View details</a>
+              </div>
+            </div>
+            <button class="text-gray-400">♡</button>
+          </div>
+             <div class="space-y-4">
+          <div class="bg-white rounded shadow p-4 flex items-center justify-between">
+            <div class="flex gap-4">
+              <img src="Image\tech\1.jpg" class="w-28 h-28 object-cover rounded" />
+              <div>
+                <h3 class="font-semibold text-lg">Samsung EOS 2000, Black 10x zoom</h3>
+                <p class="text-red-500 font-bold text-lg">$678.00 <span class="line-through text-gray-400 text-sm">$1128.00</span></p>
+                <p class="text-yellow-500">⭐⭐⭐⭐⭐154 orders - <span class="text-green-600">Free Shipping</span></p>
+                <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <a href="detail.html" class="text-blue-600 text-sm">View details</a>
+              </div>
+            </div>
+            <button class="text-gray-400">♡</button>
+          </div>
+           <div class="space-y-4">
+          <div class="bg-white rounded shadow p-4 flex items-center justify-between">
+            <div class="flex gap-4">
+              <img src="Image\tech\5.jpg" class="w-28 h-28 object-cover rounded" />
+              <div>
+                <h3 class="font-semibold text-lg">Headphones</h3>
+                <p class="text-red-500 font-bold text-lg">$89.00 <span class="line-through text-gray-400 text-sm">$1128.00</span></p>
+                <p class="text-yellow-500">⭐⭐⭐☆ 15 orders - <span class="text-green-600">Free Shipping</span></p>
+                <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <a href="detail.html" class="text-blue-600 text-sm">View details</a>
+              </div>
+            </div>
+            <button class="text-gray-400">♡</button>
+          </div>
+          <div class="space-y-4">
+          <div class="bg-white rounded shadow p-4 flex items-center justify-between">
+            <div class="flex gap-4">
+              <img src="Image\tech\7.jpg" class="w-28 h-28 object-cover rounded" />
+              <div>
+                <h3 class="font-semibold text-lg">HP Laptops 5th gen </h3>
+                <p class="text-red-500 font-bold text-lg">$998.00 <span class="line-through text-gray-400 text-sm">$1128.00</span></p>
+                <p class="text-yellow-500">⭐⭐⭐☆ 184 orders - <span class="text-green-600">Free Shipping</span></p>
+                <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <a href="detail.html" class="text-blue-600 text-sm">View details</a>
+              </div>
+            </div>
+            <button class="text-gray-400">♡</button>
+          </div>
+           <div class="space-y-4">
+          <div class="bg-white rounded shadow p-4 flex items-center justify-between">
+            <div class="flex gap-4">
+              <img src="Image\tech\8.jpg" class="w-28 h-28 object-cover rounded" />
+              <div>
+                <h3 class="font-semibold text-lg">Samsung Smart watches</h3>
+                <p class="text-red-500 font-bold text-lg">$298.00 <span class="line-through text-gray-400 text-sm">$1128.00</span></p>
+                <p class="text-yellow-500">⭐⭐⭐⭐☆ 154 orders - <span class="text-green-600">Free Shipping</span></p>
+                <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <a href="detail.html" class="text-blue-600 text-sm">View details</a>
+              </div>
+            </div>
+            <button class="text-gray-400">♡</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- Footer Section -->
+  <footer class="new-footer">
+    <div class="container top-footer">
+      <div class="footer-brand">
+        <h2><i class="fas fa-shopping-bag"></i> Brand</h2>
+        <p>Best information about the company goes here but now lorem ipsum is</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h4>About</h4>
+          <a href="#">About Us</a>
+          <a href="#">Find store</a>
+          <a href="#">Categories</a>
+          <a href="#">Blogs</a>
+        </div>
+        <div>
+          <h4>Partnership</h4>
+          <a href="#">About Us</a>
+          <a href="#">Find store</a>
+          <a href="#">Categories</a>
+          <a href="#">Blogs</a>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <a href="#">Help Center</a>
+          <a href="#">Money Refund</a>
+          <a href="#">Shipping</a>
+          <a href="#">Contact us</a>
+        </div>
+        <div>
+          <h4>For users</h4>
+          <a href="#">Login</a>
+          <a href="#">Register</a>
+          <a href="#">Settings</a>
+          <a href="#">My Orders</a>
+        </div>
+        <div>
+          <h4>Get app</h4>
+          <img src="assets\Layout\Misc\market-button.png" alt="App Store" width="120" />
+          <img src="assets\Layout\Misc\Group.png" alt="Google Play" width="120" />
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-footer">
+      <p>&copy; 2023 Ecommerce.</p>
+      <div class="language-select">
+        <img src="assets\Layout1\Image\flags\US@2x.png" alt="flag" width="20" />
+        <span>English</span>
+        <i class="fas fa-chevron-up"></i>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
